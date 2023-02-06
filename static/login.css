@@ -1,0 +1,68 @@
+.text-centered{
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-medium {
+    width: 5vw;
+    height: 3vh;
+    font-size: medium;
+}
+
+@keyframes backgroundGradient{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+body{
+    --text_input_bg:  rgba(44, 44, 44, 0.654);
+    --text_input: white;
+}
+
+#login-container {
+    display: flexbox;
+    padding: 1px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: rgba(61, 61, 61, 0.772);
+    color: white;
+    border: 2px solid gray;
+    backdrop-filter: blur(2px);
+}
+
+.text-input{
+    height: max-content;
+    font-size: larger;
+    border-radius: 10px;
+    margin-bottom: 0.1px;
+    background-color: var(--text_input_bg);
+    color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@keyframes backgroundGradient{
+    0%{ background-position: 0% 50%; }
+    50%{ background-position: 100% 50%; }
+    100%{ background-position: 0% 50%; }
+}
+
+body{
+    background-image: linear-gradient(45deg,rgb(0, 9, 138),rgb(106, 0, 162),rgb(201, 0, 164));
+    background-size: 200% 200%;
+    animation: backgroundGradient 15s ease infinite;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

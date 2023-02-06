@@ -22,6 +22,10 @@ export default function(req, res, data) {
             res.writeHead(200, { 'Content-Type': 'application/json' })
             res.end(JSON.stringify(data))
             break;
+        case '/auth':
+            console.log(data)
+            res.end(true)
+            break;
         default:
             res.writeHead(404)
             res.end('404')
